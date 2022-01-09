@@ -1,0 +1,46 @@
+{
+  "name": "vue2-basic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env env_config=dev vue-cli-service serve --open",
+    "build": "cross-env env_config=prod vue-cli-service build",
+    "build:t": "cross-env env_config=test vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prettier": "prettier --write .",
+    "test1": "vue-cli-service test:e2e",
+    "test2": "vue-cli-service test:unit",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^7.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "prettier": "^2.5.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

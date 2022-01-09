@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>vue2-basic</title>
+  <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  <% for (var i in htmlWebpackPlugin.options.cdn.css) { %>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>">
+  <% } %>
+</head>
+
+<body>
+  <noscript>
+    <strong>您的浏览器版本较低，请升级最新版浏览器</strong>
+  </noscript>
+  <div id="app"></div>
+  <% for (var i in htmlWebpackPlugin.options.cdn.js) { %>
+  <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+  <% } %>
+  <!-- built files will be auto injected -->
+  <!-- <script type="text/javascript" src="https://ydcommon.51yund.com/test_web_hd/vendor/vconsole.min.js"></script> -->
+</body>
+
+</html>
