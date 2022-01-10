@@ -17,7 +17,7 @@ files.keys().forEach((key) => {
 })
 
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
