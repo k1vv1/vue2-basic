@@ -29,28 +29,28 @@ export default {
   padding-top: 24vh;
   .headline {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 0.24rem;
     color: #1482f0;
-    margin-bottom: 10px;
+    margin-bottom: 0.1rem;
     .animat(0.5s, 0.1s);
   }
   .info {
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 0.13rem;
+    line-height: 0.21rem;
     color: grey;
-    margin-bottom: 30px;
+    margin-bottom: 0.3rem;
     .animat(0.5s, 0.2s);
   }
   .return-home {
     display: inline-block;
-    width: 110px;
-    height: 36px;
+    width: 1.1rem;
+    height: 0.36rem;
     background: #1482f0;
-    border-radius: 100px;
+    border-radius: 1rem;
     text-align: center;
     color: #ffffff;
-    font-size: 14px;
-    line-height: 36px;
+    font-size: 0.14rem;
+    line-height: 0.36rem;
     cursor: pointer;
     .animat(0.5s, 0.3s);
   }

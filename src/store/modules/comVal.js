@@ -1,9 +1,11 @@
 const state = {
-  name: 666
+  name: 'czy'
 }
 
 const actions = {
-  saveCommonValue({ commit }, value) {
+  saveCommonValue({
+    commit
+  }, value) {
     commit('SAVE_COMMON_VALUE', value)
   }
 }
@@ -15,8 +17,16 @@ const mutations = {
   }
 }
 
+const getters = {
+  nameGetter(state, getters, rootState, rootGetters) {
+    return state.name + '...'
+  },
+}
+
 export default {
+  namespaced: true,
   state,
   actions,
-  mutations
+  mutations,
+  getters
 }
